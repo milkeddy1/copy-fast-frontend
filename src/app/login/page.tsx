@@ -1,19 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { Flex, Input, Stack, chakra, Box } from "@chakra-ui/react";
-import { FaUserAlt, FaLock } from "react-icons/fa";
+import { Flex, Input, Stack, Box } from "@chakra-ui/react";
 import { Button } from "@/components/ui/button";
 
 import { FormControl } from "@chakra-ui/form-control";
 
-const CFaUserAlt = chakra(FaUserAlt);
-const CFaLock = chakra(FaLock);
-
-const App = () => {
+const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
-
-  const handleShowClick = () => setShowPassword(!showPassword);
 
   return (
     <Flex
@@ -59,4 +53,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Login;
