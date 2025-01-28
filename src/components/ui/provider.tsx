@@ -14,9 +14,9 @@ const queryClient = new QueryClient();
 
 const config = defineConfig({
   theme: {
-    // tokens: {
-    //   colors: {},
-    // },
+    tokens: {
+      colors: {},
+    },
     layerStyles: {
       nav: {
         description: "nav styles",
@@ -25,7 +25,7 @@ const config = defineConfig({
           display: "flex",
           justifyContent: "space-between",
           padding: "1rem",
-          borderBottom: "1px solid",
+          borderBottom: "1px solid #E0E0E0",
         },
       },
     },

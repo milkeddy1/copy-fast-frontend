@@ -1,19 +1,14 @@
 import { Button } from "@/components/ui/button";
-import { HStack } from "@chakra-ui/react";
+import { Box, HStack } from "@chakra-ui/react";
+import Tabs from "@/components/tabs";
 
 export default function Home() {
   return (
-    <div>
-      <main>
-        <HStack wrap="wrap" gap="6">
-          <Button size="xs">Button (xs)</Button>
-          <Button size="sm">Button (sm)</Button>
-          <Button size="md">Button (md)</Button>
-          <Button size="lg">Button (lg)</Button>
-          <Button size="xl">Button (xl)</Button>
-        </HStack>
-      </main>
-      <footer>Footer</footer>
-    </div>
+    <Box width="100%" height="100%">
+      <Box as="main" width="100%" height="100%">
+        <Tabs />
+      </Box>
+      {/* <footer>footer</footer> */}
+    </Box>
   );
 }
